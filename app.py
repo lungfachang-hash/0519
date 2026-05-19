@@ -33,10 +33,10 @@ with col_right:
     tab1 , tab2 , =st.tabs(["本月行程" , "已封存的行程"])
 
 with tab1:    
-    with st.container(border=ture):
+    with st.container(border=True):
         st.write("本月行程")
 with tab2:    
-    with st.container(border=ture):
+    with st.container(border=True):
         st.write("已封存的行程")
 
 st.write("上面是大標題")
