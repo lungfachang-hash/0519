@@ -27,7 +27,7 @@ with col_left:
         @dialog("新增完成")
         def showAdd():        
             st.write(f"新增行程{txt} 成功")
-        showAdd(): 
+        showAdd()
             
     st.button("按鈕放左邊")
 with col_right: 
