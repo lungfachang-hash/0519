@@ -17,8 +17,8 @@ with col_left:
 
     meeting_time = st.time_input("選擇時間")    
 
-    txt = st.txt_input(" 時間：09:00")
-    if st.dilog("新增行程"):
+    txt = st.text_input("時間：09:00")
+    if st.dialog("新增行程"):
         @dialog("新增完成")
         def showAdd():        
             st.write(f"新增行程{txt} 成功")
