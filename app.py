@@ -57,11 +57,3 @@ with r:
                 🔔 提前 {item["remind"]} 分鐘
             </div>
             """, unsafe_allow_html=True)
-        
-
-
-
-
-
-with st.expander("查看進階提醒參數設定"):
-    st.write("這裡是發信伺服器的底層設定...")
