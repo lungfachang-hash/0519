@@ -19,7 +19,7 @@ with col_left:
     
 today = st.date_input(  "選擇日期",  datetime.date.today())
 
-import datetime
+
     meeting_time = st.time_input("選擇時間") 
 
 
