@@ -26,9 +26,18 @@ with col_right:
 
 with tab1:    
     with st.container(border=ture):
+        st.write("本月行程")
+with tab2:    
+    with st.container(border=ture):
+        st.write("已封存的行程")
 
+st.write("上面是大標題")
+st.divider()
+st.write("下面是內容區塊")        
+st.button("按鈕 A")
+st.write("")   #塞入一哥空白間距
+st.button("按鈕 B")
         
-        st.button("控制項放右邊")    
 
 
 with col_center: 
