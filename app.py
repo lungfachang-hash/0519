@@ -30,12 +30,12 @@ with col_left:
         showAdd()
             
     st.button("按鈕放左邊")
-with col_right: 
-    st.write("###  行程檢視")
-    tab1 , tab2 , =st.tabs(["本月行程" , "已封存的行程"])
 with col_center: 
     st.write("###  看板區")
     st.info("主要行程訊息放中間")
+with col_right: 
+    st.write("###  行程檢視")
+    tab1 , tab2 , =st.tabs(["本月行程" , "已封存的行程"])
 
 with tab1:    
     with st.container(border=ture):
