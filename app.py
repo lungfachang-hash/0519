@@ -20,11 +20,7 @@ with col_left:
 
 today = st.date_input("選擇日期",  datetime.date.today())
 
-meeting_time = st.time_input(
-  "選擇時間"
-)
-
-
+meeting_time = st.time_input("選擇時間")
     
     my_color = st.color_picker( "挑選辨識顏色", "#1A73E8")
 
