@@ -12,6 +12,16 @@ col_left, col_center, col_right = st.columns([1, 2, ], gap="large")
 with col_left: 
     with st.container(border=True):     
     st.write("行程描述") 
+
+    title = st.text_input(
+  "行程主旨",
+  placeholder="請填寫會議名稱..."
+)
+
+meeting_time = st.time_input(
+  "選擇時間"
+)    
+
     txt = st.txt_input(" 時間：09:00")
     if st.dilog("新增行程")
         @dialog("新增完成")
