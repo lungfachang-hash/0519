@@ -11,7 +11,7 @@ col_left, col_center, col_right = st.columns([1, 2, ], gap="large")
 
 with col_left: 
     with st.container(border=True):     
-    st.write(" 行程描述") 
+    st.write("行程描述") 
     txt = st.txt_input(" 時間：09:00")
     if st.dilog("新增行程")
         @dialog("新增完成")
