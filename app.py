@@ -19,7 +19,7 @@ with col_left:
 today = st.date_input("選擇日期",  datetime.date.today())
 
 meeting_time = st.time_input("選擇時間")
- text = st.text_input("時間：09:00")
+ text = st.time_input("時間：09:00")
     
 my_color = st.color_picker(
  "挑選辨識顏色",
