@@ -3,27 +3,39 @@ st.set_page_config(page_title="微型 TimeTree", layout="wide")
 
 with st.sidebar:
     st.write("###  行事曆群組")
-    st.radio("選擇群組", ["工作","家庭", "家庭"])
+    st.radio("選擇群組", ["工作","家庭", "家庭","朋友"])
 
 #建立三個不等寬的欄位：左欄放輸入(1)、中欄放看板(2)、右欄放設定(1.2)
 
-col_left, col_center, col_right = st.columns([1, 2, 1.2], gap="large")
+col_left, col_center, col_right = st.columns([1, 2, ], gap="large")
 
 with col_left: 
-    st.write("###  新增區") 
+    with st.container(border=True):     
+    st.write(" 行程描述") 
+    txt = st.txt_input(" 時間：09:00")
+    if st.dilog("新增行程")
+        @dialog("新增完成")
+        def showAdd():        
+        st.write(f"新增行程{txt} 成功")
+            showAdd(): 
+            
     st.button("按鈕放左邊")
-    
-with st.container(border=True):     
-    st.write(" 標題：開學典禮") 
-    st.write(" 時間：09:00")
+with col_right: 
+    st.write("###  行程檢視")
+    tab1 , tab2 , =st.tabs(["本月行程" , "已封存的行程"])
+
+with tab1:    
+    with st.container(border=ture):
+
+        
+        st.button("控制項放右邊")    
+
 
 with col_center: 
     st.write("###  看板區")
     st.info("主要行程訊息放中間")
 
-with col_right: 
-    st.write("###  設定區") 
-    st.button("控制項放右邊")
+
 
 with st.expander("查看進階提醒參數設定"):
     st.write("這裡是發信伺服器的底層設定...")
