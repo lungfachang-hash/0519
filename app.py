@@ -5,7 +5,7 @@ with st.sidebar:
     st.write("###  行事曆群組")
     st.radio("選擇群組", ["工作","家庭", "家庭"])
 
-建立三個不等寬的欄位：左欄放輸入(1)、中欄放看板(2)、右欄放設定(1.2)
+#建立三個不等寬的欄位：左欄放輸入(1)、中欄放看板(2)、右欄放設定(1.2)
 
 col_left, col_center, col_right = st.columns([1, 2, 1.2], gap="large")
 
