@@ -7,32 +7,28 @@ with st.sidebar:
 
 #建立三個不等寬的欄位：左欄放輸入(1)、中欄放看板(2)、右欄放設定(1.2)
 
-col_left, col_center, col_right = st.columns([1, 2, ], gap="large")
+col_left, col_center, col_right = st.columns([1, 2, 1.2], gap="large")
 
 with col_left: 
     with st.container(border=True):     
         st.write("行程描述") 
 
-    title = st.text_input(
-  "行程主旨",
-  placeholder="請填寫會議名稱..."
-)
+    title = st.text_input("行程主旨",placeholder="請填寫會議名稱...")
 
-    meeting_time = st.time_input(
-      "選擇時間"
-    )    
+    meeting_time = st.time_input("選擇時間")    
 
     txt = st.txt_input(" 時間：09:00")
     if st.dilog("新增行程"):
         @dialog("新增完成")
         def showAdd():        
             st.write(f"新增行程{txt} 成功")
-        showAdd()
-            
+        showAdd() 
     st.button("按鈕放左邊")
+    
 with col_center: 
     st.write("###  看板區")
     st.info("主要行程訊息放中間")
+    
 with col_right: 
     st.write("###  行程檢視")
     tab1 , tab2 , =st.tabs(["本月行程" , "已封存的行程"])
