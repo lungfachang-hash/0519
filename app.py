@@ -23,7 +23,7 @@ with col_left:
     )    
 
     txt = st.txt_input(" 時間：09:00")
-    if st.dilog("新增行程")
+    if st.dilog("新增行程"):
         @dialog("新增完成")
         def showAdd():        
         st.write(f"新增行程{txt} 成功")
